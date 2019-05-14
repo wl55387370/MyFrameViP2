@@ -19,7 +19,7 @@ class HTTP():
         self.jsonres = None
         self.json = {}
 
-    def steurl(self, u):
+    def seturl(self, u):
         # 设置请求的基本url
         self.url = u + "/"
 
@@ -37,24 +37,39 @@ class HTTP():
 
     def post(self, path, params=None):
         # 解析参数为一个dict
+        # 调用post方法,请求接口
         self.__get_params(params)
-        # 调用post,请求接口
         self.result = self.session.post(self.url + path, data=self.params)
-        self.jsonres = json.loads(self.result.text)
+        print(self.result.text)
+        self.jsonres = json.loads(self.__to_json(self.result.text))
+
+    def get(self, path, params=None):
+        # 调用get,请求接口
+        self.result = self.session.get(self.url + path + '?' + params)
+        self.jsonres = json.loads(self.__to_json(self.result.text))
+
+    def __to_json(self, res):
+        # get方法不是纯json格式
+        return res[res.find('{'):res.rfind('}') + 1]
 
     def __get_params(self, p):
 
         # 每一次解析参数之前先清空参数dict
         self.params.clear()
-        if p is None:
+        if p is None or p=='':
             return self.params
             # return {}
-        # 分割每一个参数
+        # 分割每一个键值队
         pp = p.split('&')
+        # 遍历每一个键值队
         for s in pp:
             # 分割每一个参数的键和值
             ppp = s.split('=')
-            self.params[ppp[0]] = ppp[1]
+            # self.params[ppp[0]] = ppp[1]
+            try:
+                self.params[ppp[0]] = ppp[1]
+            except Exception as e:
+                self.params[ppp[0]] = None
 
         return self.params
 
@@ -70,19 +85,17 @@ class HTTP():
         else:
             print("FAIL")
 
-    def savejson(self,key,p):
+    def savejson(self, key, p):
         """
         将返回结果里面.json的key的值，保存到我们框架的p这个参数里面
         :param key:需要保存的json值的键
         :param p:保存后的参数名
         :return:无
         """
-        self.json[p] = self.jsonres[key]
+        self.json[key] = self.jsonres[p]
 
-
-    def __get_value(self,p):
-        #用{key}的形式去替换参数里面的字符串，如果没有就不替换
+    def __get_value(self, p):
+        # 用{key}的形式去替换参数里面的字符串，如果没有就不替换
         for key in self.json.keys():
-            p = p.replace('{' + key + '}',self.json[key])
+            p = p.replace('{' + key + '}', self.json[key])
         return p
-
