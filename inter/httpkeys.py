@@ -1,5 +1,5 @@
 # coding=utf8
-import requests, json
+import requests,json
 
 
 class HTTP():
@@ -9,7 +9,7 @@ class HTTP():
     提供接口测试结果断言的各种方法
     """
 
-    def __init__(self):
+    def __init__(self,w):
         # 在创建对象的时候初始化session
         self.session = requests.session()
         # 设置请求的基本url
@@ -18,10 +18,13 @@ class HTTP():
         self.result = None
         self.jsonres = None
         self.json = {}
+        self.writer=w
 
     def seturl(self, u):
         # 设置请求的基本url
         self.url = u + "/"
+        self.writer.write(self.writer.row, self.writer.clo, "PASS")
+        self.writer.write(self.writer.row, self.writer.clo + 1, str(self.url))
 
     def removeheader(self, key):
         # 从请求的头里面删除key的值
@@ -30,10 +33,15 @@ class HTTP():
         except Exception as e:
             print(e)
 
+        self.writer.write(self.writer.row, self.writer.clo, "PASS")
+        self.writer.write(self.writer.row, self.writer.clo + 1, str(self.session.headers))
+
     def addheader(self, key, value):
         # 往请求的头里添加一个键值对
         value = self.__get_value(value)
         self.session.headers[key] = value
+        self.writer.write(self.writer.row, self.writer.clo, "PASS")
+        self.writer.write(self.writer.row, self.writer.clo+1, str(self.session.headers))
 
     def post(self, path, params=None):
         # 解析参数为一个dict
@@ -42,11 +50,17 @@ class HTTP():
         self.result = self.session.post(self.url + path, data=self.params)
         print(self.result.text)
         self.jsonres = json.loads(self.__to_json(self.result.text))
+        self.writer.write(self.writer.row, self.writer.clo, "PASS")
+        self.writer.write(self.writer.row, self.writer.clo+1, str(self.jsonres))
+
 
     def get(self, path, params=None):
         # 调用get,请求接口
         self.result = self.session.get(self.url + path + '?' + params)
         self.jsonres = json.loads(self.__to_json(self.result.text))
+        self.writer.write(self.writer.row, self.writer.clo, "PASS")
+        self.writer.write(self.writer.row, self.writer.clo+1, str(self.jsonres))
+
 
     def __to_json(self, res):
         # get方法不是纯json格式
@@ -82,8 +96,12 @@ class HTTP():
         """
         if str(self.jsonres[key]) == value:
             print("PASS")
+            self.writer.write(self.writer.row, self.writer.clo, "PASS")
+            self.writer.write(self.writer.row, self.writer.clo+1, self.jsonres[key])
         else:
             print("FAIL")
+            self.writer.write(self.writer.row, self.writer.clo, "FAIL")
+            self.writer.write(self.writer.row, self.writer.clo + 1, self.jsonres[key])
 
     def savejson(self, key, p):
         """
@@ -93,6 +111,8 @@ class HTTP():
         :return:无
         """
         self.json[key] = self.jsonres[p]
+        self.writer.write(self.writer.row, self.writer.clo, "PASS")
+        self.writer.write(self.writer.row, self.writer.clo + 1, self.jsonres[key])
 
     def __get_value(self, p):
         # 用{key}的形式去替换参数里面的字符串，如果没有就不替换
