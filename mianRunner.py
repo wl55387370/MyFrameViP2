@@ -2,7 +2,9 @@
 from common.Excel import Reader, Writer
 from inter.httpkeys import HTTP
 import inspect
-
+from common import logger,config
+from common.mysql import Mysql
+from common.mail import Mail
 
 def runCases(http, line):
     """
@@ -54,16 +56,22 @@ def runCases(http, line):
         elif len(p) == 3:
             func(line[4], line[5], line[6])
         else:
-            print("waring:框架暂时只支持3个参数！")
+            logger.warn("waring:框架暂时只支持3个参数！")
 
 
 if __name__ == "__main__":
-    print("整个框架使用该入口执行")
+    logger.info("整个框架使用该入口执行")
+    #运行用例之前，初始化配置，初始化数据库
+    config.get_config('./lib/conf.properties')
+    mysql = Mysql()
+    mysql.init_mysql('./lib/userinfo.sql')
+
+    #开始读取用例
     reader = Reader()
     # http = HTTP()
     reader.open_excel('./lib/HTTP接口用例.xls')
     sheetname = reader.get_sheets()
-    print(sheetname)
+    logger.info(sheetname)
 
     writer = Writer()
     writer.copy_open('./lib/HTTP接口用例.xls', './lib/result-HTTP接口用例.xls')
@@ -79,9 +87,13 @@ if __name__ == "__main__":
         for i in range(reader.rows):
             writer.row = i
             line = reader.readline()
-            print(line)
+            logger.info(line)
             try:
                 runCases(http, line)
             except Exception as e:
-                pass
+                # pass
+                logger.exception(e)
     writer.save_close()
+
+    mail = Mail()
+    mail.send(config.config['mailtxt'])
