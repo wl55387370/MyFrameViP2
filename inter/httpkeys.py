@@ -1,5 +1,5 @@
 # coding=utf8
-import requests,json
+import requests,jsonpath,json
 from common import logger
 
 class HTTP():
@@ -19,6 +19,9 @@ class HTTP():
         self.jsonres = None
         self.json = {}
         self.writer=w
+        self.session.headers[
+            'User-Agent'] = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+        self.session.headers['Content-Type'] = 'application/x-www-form-urlencoded'
 
     def seturl(self, u):
         # 设置请求的基本url
@@ -94,14 +97,16 @@ class HTTP():
         :param value:期望值
         :return:无
         """
-        if str(self.jsonres[key]) == value:
+        # if str(self.jsonres[key]) == value:
+        #利用jsonpath断言
+        if str(jsonpath.jsonpath(self.jsonres, key)[0]) == value:
             # print("PASS")
             self.writer.write(self.writer.row, self.writer.clo, "PASS")
-            self.writer.write(self.writer.row, self.writer.clo+1, self.jsonres[key])
+            self.writer.write(self.writer.row, self.writer.clo+1, str(jsonpath.jsonpath(self.jsonres, key)[0]))
         else:
             # print("FAIL")
             self.writer.write(self.writer.row, self.writer.clo, "FAIL")
-            self.writer.write(self.writer.row, self.writer.clo + 1, self.jsonres[key])
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(jsonpath.jsonpath(self.jsonres, key)[0]))
 
     def savejson(self, key, p):
         """
@@ -111,9 +116,11 @@ class HTTP():
         :return:无
         """
         logger.info(self.jsonres)
-        self.json[key] = self.jsonres[p]
+        # self.json[key] = self.jsonres[p]
+        self.json[p] = str(jsonpath.jsonpath(self.jsonres, key)[0])
         self.writer.write(self.writer.row, self.writer.clo, "PASS")
-        self.writer.write(self.writer.row, self.writer.clo + 1, self.jsonres[key])
+        # self.writer.write(self.writer.row, self.writer.clo + 1, self.jsonres[key])
+        self.writer.write(self.writer.row, self.writer.clo + 1, str(self.json))
 
     def __get_value(self, p):
         # 用{key}的形式去替换参数里面的字符串，如果没有就不替换

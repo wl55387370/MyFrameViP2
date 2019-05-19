@@ -1,5 +1,25 @@
 #coding=utf8
 from inter.httpkeys import HTTP
+import  requests
+
+
+session = requests.session()
+session.headers['User-Agent']='Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+session.headers['Content-Type']= 'application/x-www-form-urlencoded'
+
+res = session.post('https://www.zhihu.com/udid',data=None)
+print(res.text)
+res=session.get('https://www.zhihu.com/api/v3/oauth/captcha?lang=en')
+print(res.text)
+session.headers['x-zse-83'] = '3_1.1'
+# print(session.cookies)
+# print(session.headers)
+
+# res =session.post('https://www.zhihu.com/api/v3/oauth/sign_in',data='')
+# print(res.text)
+# res = session.get('https://www.zhihu.com/logout',data=None)
+# print(res.text)
+
 
 # if __name__ == "__main__":
     # h = {
@@ -32,21 +52,21 @@ from inter.httpkeys import HTTP
     # http.assertequals('status', '200')
 
 
-from suds.client import Client
-from suds.xsd.doctor import ImportDoctor, Import
-import  time
-
-imp = Import('http://www.w3.org/2001/XMLSchema', location='http://www.w3.org/2001/XMLSchema.xsd')
-imp.filter.add('http://WebXml.com.cn/')
-doctor = ImportDoctor(imp)
-
-client = Client('http://www.webxml.com.cn/WebServices/WeatherWebService.asmx?wsdl',doctor=doctor)
-
-res = client.service.getWeatherbyCityName('长沙')
-print(res)
-time.sleep(1)
-res = client.service.getWeatherbyCityName('北京')
-print(res)
-time.sleep(1)
-res = client.service.getWeatherbyCityName('上海')
-print(res)
+# from suds.client import Client
+# from suds.xsd.doctor import ImportDoctor, Import
+# import  time
+#
+# imp = Import('http://www.w3.org/2001/XMLSchema', location='http://www.w3.org/2001/XMLSchema.xsd')
+# imp.filter.add('http://WebXml.com.cn/')
+# doctor = ImportDoctor(imp)
+#
+# client = Client('http://www.webxml.com.cn/WebServices/WeatherWebService.asmx?wsdl',doctor=doctor)
+#
+# res = client.service.getWeatherbyCityName('长沙')
+# print(res)
+# time.sleep(1)
+# res = client.service.getWeatherbyCityName('北京')
+# print(res)
+# time.sleep(1)
+# res = client.service.getWeatherbyCityName('上海')
+# print(res)

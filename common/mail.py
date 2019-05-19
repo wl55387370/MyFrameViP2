@@ -4,6 +4,8 @@ from email.header import Header
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from common import config,logger
+from email.mime.application import MIMEApplication
+
 
 
 class Mail:
@@ -53,7 +55,7 @@ class Mail:
         # 支持附件的邮件
         msg = MIMEMultipart()
         msg.attach(MIMEText(text, 'html', self.mail_info['mail_encoding']))
-        msg['Subject'] = Header(self.mail_info['mail_subject'], self.mail_info['mail_encoding'])
+        msg['Subject'] = Header(self.mail_info['mail_subject'], self.mail_info[  'mail_encoding'])
         msg['from'] = self.mail_info['from']
 
         logger.debug(self.mail_info)
@@ -65,9 +67,13 @@ class Mail:
 
         # 添加附件
         for i in range(len(self.mail_info['filepaths'])):
-            att1 = MIMEText(open(self.mail_info['filepaths'][i], 'rb').read(), 'base64', 'utf-8')
-            att1['Content-Type'] = 'application/octet-stream'
-            att1['Content-Disposition'] = 'attachment; filename= "'+self.mail_info['filenames'][i]+'"'
+            # att1 = MIMEText(open(self.mail_info['filepaths'][i], 'rb').read(), 'base64', 'utf-8')
+            # att1['Content-Type'] = 'application/octet-stream'
+            # att1['Content-Disposition'] = 'attachment; filename= "'+self.mail_info['filenames'][i]+'"'
+            # msg.attach(att1)
+            #附件有中文时
+            att1 = MIMEApplication(open(self.mail_info['filepaths'][i], 'rb').read())
+            att1.add_header('Content-Disposition', 'attachment', filename=('gbk', '', self.mail_info['filenames'][i]))
             msg.attach(att1)
 
         try:
