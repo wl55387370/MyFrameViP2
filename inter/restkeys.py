@@ -2,7 +2,7 @@
 import requests,jsonpath,json
 from common import logger
 
-class HTTP():
+class REST():
     """
     http协议接口测试的关键字类
     提供调用http接口的各种方法
@@ -19,6 +19,7 @@ class HTTP():
         self.jsonres = None
         self.json = {}
         self.writer=w
+        self.status="200"
         self.session.headers[
             'User-Agent'] = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
         self.session.headers['Content-Type'] = 'application/x-www-form-urlencoded'
@@ -59,10 +60,20 @@ class HTTP():
     def post_rest(self, path, params=None):
         # 解析参数为一个dict
         # 调用post方法,请求接口
-        self.__get_params(params)
-        self.result = self.session.post(self.url + path, data=self.params)
-        logger.info(self.result.text)
-        self.jsonres = json.loads(self.__to_json(self.result.text))
+        if params.find('=')>=0 or params=="":
+            self.__get_params(params)
+            # logger.info(self.url + path)
+            self.result = self.session.post(self.url + path, data=self.params)
+        else:
+            self.result = self.session.post(self.url + path+'?'+params)
+        # logger.info(self.result.text)
+        if self.result.status_code>300:
+            self.status = str(self.result.status_code)
+            self.writer.write(self.writer.row, self.writer.clo, "PASS")
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(self.result.text))
+        else:
+            self.status = str(self.result.status_code)
+            self.jsonres = json.loads(self.__to_json(self.result.text))
         self.writer.write(self.writer.row, self.writer.clo, "PASS")
         self.writer.write(self.writer.row, self.writer.clo+1, str(self.jsonres))
 
@@ -110,14 +121,31 @@ class HTTP():
         """
         # if str(self.jsonres[key]) == value:
         #利用jsonpath断言
-        if str(jsonpath.jsonpath(self.jsonres, key)[0]) == value:
-            # print("PASS")
-            self.writer.write(self.writer.row, self.writer.clo, "PASS")
-            self.writer.write(self.writer.row, self.writer.clo+1, str(jsonpath.jsonpath(self.jsonres, key)[0]))
+        if int(self.status)>300:
+            if key =="status":
+                if self.status == value:
+                    # print("PASS")
+                    self.writer.write(self.writer.row, self.writer.clo, "PASS")
+                    self.writer.write(self.writer.row, self.writer.clo + 1,
+                                      str(self.status))
+                else:
+                    # print("FAIL")
+                    self.writer.write(self.writer.row, self.writer.clo, "FAIL")
+                    self.writer.write(self.writer.row, self.writer.clo + 1,
+                                     str(self.status))
+            else:
+                self.writer.write(self.writer.row, self.writer.clo, "FAIL")
+                self.writer.write(self.writer.row, self.writer.clo + 1,
+                                  str(self.status))
         else:
-            # print("FAIL")
-            self.writer.write(self.writer.row, self.writer.clo, "FAIL")
-            self.writer.write(self.writer.row, self.writer.clo + 1, str(jsonpath.jsonpath(self.jsonres, key)[0]))
+            if str(jsonpath.jsonpath(self.jsonres, key)[0]) == value:
+                # print("PASS")
+                self.writer.write(self.writer.row, self.writer.clo, "PASS")
+                self.writer.write(self.writer.row, self.writer.clo+1, str(jsonpath.jsonpath(self.jsonres, key)[0]))
+            else:
+                # print("FAIL")
+                self.writer.write(self.writer.row, self.writer.clo, "FAIL")
+                self.writer.write(self.writer.row, self.writer.clo + 1, str(jsonpath.jsonpath(self.jsonres, key)[0]))
 
     def savejson(self, key, p):
         """

@@ -72,7 +72,8 @@ class Mail:
             # att1['Content-Disposition'] = 'attachment; filename= "'+self.mail_info['filenames'][i]+'"'
             # msg.attach(att1)
             #附件有中文时
-            att1 = MIMEApplication(open(self.mail_info['filepaths'][i], 'rb').read())
+            att1 = MIMEText(open(self.mail_info['filepaths'][i], 'rb').read(), 'base64', 'utf-8')
+            att1['Content-Type'] = 'application/octet-stream'
             att1.add_header('Content-Disposition', 'attachment', filename=('gbk', '', self.mail_info['filenames'][i]))
             msg.attach(att1)
 

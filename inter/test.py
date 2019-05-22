@@ -3,15 +3,18 @@ from inter.httpkeys import HTTP
 import  requests
 
 
-session = requests.session()
-session.headers['User-Agent']='Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
-session.headers['Content-Type']= 'application/x-www-form-urlencoded'
+# session = requests.session()
+# # session.headers['User-Agent']='Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+# # session.headers['Content-Type']= 'application/x-www-form-urlencoded'
+# #
+# # res = session.post('https://www.zhihu.com/udid',data=None)
+# # print(res.text)
+# # res=session.get('https://www.zhihu.com/api/v3/oauth/captcha?lang=en')
+# # print(res.text)
+# # session.headers['x-zse-83'] = '3_1.1'
 
-res = session.post('https://www.zhihu.com/udid',data=None)
-print(res.text)
-res=session.get('https://www.zhihu.com/api/v3/oauth/captcha?lang=en')
-print(res.text)
-session.headers['x-zse-83'] = '3_1.1'
+
+
 # print(session.cookies)
 # print(session.headers)
 
@@ -70,3 +73,11 @@ session.headers['x-zse-83'] = '3_1.1'
 # time.sleep(1)
 # res = client.service.getWeatherbyCityName('上海')
 # print(res)
+import requests,json
+session = requests.session()
+result = session.post("http://112.74.191.10:8081/inter/REST/auth")
+token=json.loads(result.text)['token']
+session.headers['token']=token
+
+result=session.post("http://112.74.191.10:8081/inter/REST/user/register", json='{"username":"Tester","pwd":"123456","nickname":"测试账号","describe":"这是一个测试注册的账号"}')
+print(result.text)

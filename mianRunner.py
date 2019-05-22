@@ -2,11 +2,13 @@
 from common.Excel import Reader, Writer
 from inter.httpkeys import HTTP
 from inter.soapkeys import SOAP
+from inter.restkeys import REST
 import inspect,time
 from common import logger,config
 from common.mysql import Mysql
 from common.mail import Mail
 from common.excelresult import Res
+from web.webkeys import WEB
 
 def runCases(http, line):
     """
@@ -64,6 +66,9 @@ def runCases(http, line):
 if __name__ == "__main__":
     logger.info("整个框架使用该入口执行")
     #运行用例之前，初始化配置，初始化数据库
+
+    casename='WEB.xls'
+
     config.get_config('./lib/conf.properties')
     mysql = Mysql()
     mysql.init_mysql('./lib/userinfo.sql')
@@ -72,13 +77,13 @@ if __name__ == "__main__":
     reader = Reader()
     # http = HTTP()
     # reader.open_excel('./lib/HTTP接口用例.xls')
-    reader.open_excel('./lib/SOAP.xls')
+    reader.open_excel('./lib/'+casename)
     sheetname = reader.get_sheets()
     logger.info(sheetname)
 
     writer = Writer()
     # writer.copy_open('./lib/HTTP接口用例.xls', './lib/result-HTTP接口用例.xls')
-    writer.copy_open('./lib/SOAP.xls', './lib/result-SOAP.xls')
+    writer.copy_open('./lib/'+casename, './lib/result-'+casename)
     # sheetname = writer.get_sheets()
 
     #获取开始时间
@@ -94,8 +99,12 @@ if __name__ == "__main__":
     if line[1] =='HTTP':
 
         http = HTTP(writer)
-    else:
+    elif line[1] =='SOAP':
         http = SOAP(writer)
+    elif line[1] =='REST':
+        http =REST(writer)
+    else:
+        http = WEB(writer)
     for sheet in sheetname:
         # 设置当前读取的sheet页面
         reader.set_sheet(sheet)
@@ -122,7 +131,7 @@ if __name__ == "__main__":
 
     res = Res()
     # result = res.get_res('./lib/result-HTTP接口用例.xls')
-    result = res.get_res('./lib/result-SOAP.xls')
+    result = res.get_res('./lib/result-'+casename)
     print(result)
 
 
@@ -145,6 +154,6 @@ if __name__ == "__main__":
     #附件的路径，如果有多个就用，分割
     # mail.mail_info['filepaths'] = ['./lib/result-HTTP接口用例.xls']
     # mail.mail_info['filenames'] = ['result-HTTP.xls']
-    mail.mail_info['filepaths'] = ['./lib/result-SOAP.xls']
-    mail.mail_info['filenames'] = ['result-SOAP.xls']
+    mail.mail_info['filepaths'] = ['./lib/result-'+casename]
+    mail.mail_info['filenames'] = ['result-'+casename]
     mail.send(config.config['mailtxt'])
