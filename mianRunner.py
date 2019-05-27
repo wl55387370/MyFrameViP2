@@ -103,8 +103,10 @@ if __name__ == "__main__":
         http = SOAP(writer)
     elif line[1] =='REST':
         http =REST(writer)
-    else:
+    elif line[1] =='WEB':
         http = WEB(writer)
+    else:
+        http = APP(writer)
     for sheet in sheetname:
         # 设置当前读取的sheet页面
         reader.set_sheet(sheet)
