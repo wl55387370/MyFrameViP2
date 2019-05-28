@@ -17257,3 +17257,731 @@ IndexError: list index out of range
 2019-05-27 12:32:53,233 - DEBUG - {'from': 'm18570394312_1@163.com', 'username': 'm18570394312_1@163.com', 'hostname': 'smtp.163.com', 'password': 'dongnao001', 'to': ['1416084196@qq.com'], 'cc': ['286075568@qq.com'], 'mail_subject': '电商WEB自动化报告', 'mail_encoding': 'utf8', 'filepaths': ['./lib/result-WEB.xls'], 'filenames': ['result-WEB.xls']}
 2019-05-27 12:32:53,233 - DEBUG - <html><style type="text/css" >body{ background:#ffffff; margin:0 auto; padding:0; text-align:left; font-size:13px; font-family: "微软雅黑","宋体";}table{ font-size:13px; font-family: "微软雅黑","宋体";}.table_c{border:1px solid #ccc;border-collapse:collapse; }.table_c td{border:1px solid #ccc; border-collapse:collapse;}.table_b{border:1px solid #666;border-collapse:collapse; }.table_b td{ border-collapse:collapse; border:1px solid #ccc;}.table_b th{color:#fff; background:#666;}a:link{ color:#3366cc; font-weight:normal; }a:visited { color: #3366cc;}a:hover{ color:#000; }a:active { color:#3366cc; }td{ line-height:20px;}.case-group {border: 1px solid transparent;border-color: #ddd;line-height:5px;}.case-group a:link,a:hover{color:#0092fa;text-decoration:none;}.group-模拟器测试用例{margin: 10px;}.case-模拟器测试用例{height: 30px;}.case-case {border-top: 1px solid;border-color: #ddd;padding: 13px;word-wrap: break-word;}.statuclass{float:right;right:5%;position:relative;}.countclass{float:right;right:20%;position:relative;}.passclass{float:right;right:30%;position:relative;}.casename{position:relative;left:3%;}.righta{float:right;font-size:20px;}.case-file{border: 2px #8cbfff solid;border-radius: 5px;}</style><table width="650" ="0" cellspacing="0" align="center" cellpadding="0" style="border-radius: 15px;background-color: #f6f5f5;border: 1px #ffe4da solid;"><tbody><tr><td><table width="660" border="0" cellpadding="0" cellspacing="0" style="border-radius: 15px 15px 0 0;background-color: #ffffff;"><tbody><tr><td width="137"><img src="http://112.74.191.10/wp-content/uploads/2018/07/logo_middle.png" width="137" height="80"></td><td align="left" style="font-size: 13px;color: #999999;padding-top: 26px;right: 10px;position: relative;top: -10px;text-align:right;"><h style="font-size: 20px;font-family: cursive;line-height: 30px;color: #8cbfff;">Hi All ！ </h><br>此为来自特斯汀学院自动化小组测试邮件，请不要直接回复。</td></tr></tbody></table><br><table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="font-size: 14px; color: 333333; font-weight: bold; padding:0 0 15px 16px;">测试报告：<font color="ff6600">自动化测试用例</font></td></tr><tr><td style="border: 2px #8cbfff solid;border-radius: 5px;"><table width="630" border="0" align="center" class="table_c" style="border-collapse:collapse;margin: 10px;"><tbody><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试内容</td><td colspan="3" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><h4 style="line-height: 1px;margin:0;">电商WEB自动化报告</h4></td></tr><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试状态</td><td height="28" width="150" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><font style="font-weight: bold;font-size: 14px;color: red;">Fail</font></td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">类型</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">WEB</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">通过率</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">13.33</td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">开始时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-27 12:31:58</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">总用例数</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">15</td><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">结束时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-27 12:32:44</td></tr></tbody></table></td></tr><tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 10px 16px;border-bottom: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">如果您对本次邮件结果有任何疑问，请联系 <a href="http://wpa.qq.com/msgrd?v=3&uin=1052949192&site=qq&menu=yes" target="_blank" color="#666666">William：1052949192</a></a> 反馈。</td></tr></tbody></table></td></tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 16px 16px;border-top: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">感谢您的查阅。<font color="#666666">All Rights Reserved by 特斯汀 College. Designed and Developed by Mr. William.</font></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>
 2019-05-27 12:32:54,038 - INFO - 邮件发送成功
+2019-05-28 14:59:41,041 - INFO - 整个框架使用该入口执行
+2019-05-28 14:59:41,048 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 14:59:41,054 - INFO - ['新零售WEB']
+2019-05-28 14:59:41,065 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 14:59:41,065 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 14:59:41,065 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 14:59:41,065 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 14:59:43,902 - ERROR - write() missing 1 required positional argument: 'value'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 59, in runCases
+    func(line[4], line[5])
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 33, in openbrower
+    self.writer.write(self.writer.row, self.writer.clo + 1)
+TypeError: write() missing 1 required positional argument: 'value'
+2019-05-28 14:59:43,903 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 14:59:44,691 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 14:59:44,691 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 14:59:48,338 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 14:59:48,338 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 14:59:48,338 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 14:59:48,411 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 14:59:48,411 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 14:59:48,411 - INFO - ['', '', '点击登录', 'click', '//*[@id="app"]/div/div[2]/form/div/button', '', '', '', '']
+2019-05-28 14:59:48,460 - ERROR - Message: element click intercepted: Element <button type="button" class="login-btn ivu-btn ivu-btn-primary">...</button> is not clickable at point (1603, 634). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1005;">...</div>
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type="button" class="login-btn ivu-btn ivu-btn-primary">...</button> is not clickable at point (1603, 634). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1005;">...</div>
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+
+2019-05-28 14:59:48,469 - INFO - ['', '新订单', '', ' ', '', '', '', '', '']
+2019-05-28 14:59:48,469 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 14:59:48,469 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 14:59:48,469 - INFO - ['', '', '点击查看详情', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/div/button[2]/span', '', '', '', '']
+2019-05-28 14:59:50,254 - ERROR - 'NoneType' object has no attribute 'click'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2019-05-28 14:59:50,255 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 14:59:50,255 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 14:59:50,255 - INFO - ['', '', '点击返回', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div[5]/div[2]/div/div[1]/button/span', '', '', '', '']
+2019-05-28 14:59:50,257 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+
+2019-05-28 14:59:50,258 - INFO - ['', '订单管理', '', ' ', '', '', '', '', '']
+2019-05-28 14:59:50,258 - INFO - ['', '', '切入订单管理', 'click', '//*[@id="app"]/div/div[1]/div[1]/div/ul/li[1]/ul/li[2]/span', '', '', '', '']
+2019-05-28 14:59:50,260 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+
+2019-05-28 14:59:50,261 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 14:59:50,261 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 14:59:50,261 - INFO - ['', '', '搜索订单', 'input', "//input[@placeholder='经销商名称/订单号查询']", '10392.0', ' ', '', '']
+2019-05-28 14:59:50,264 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 59, in input
+    self.driver.find_element_by_xpath(xpath).send_keys(text)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+
+2019-05-28 14:59:50,264 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 14:59:50,265 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 14:59:50,265 - INFO - ['', '', '点击搜索', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div[1]/div/form/div/div[2]/button', '', '', '', '']
+2019-05-28 14:59:50,267 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+
+2019-05-28 14:59:50,267 - INFO - ['', '退出', '', ' ', '', '', '', '', '']
+2019-05-28 14:59:50,267 - INFO - ['', '', '关闭浏览器', 'closebrower', '', '', '', '', '']
+2019-05-28 14:59:57,411 - INFO - 整个框架使用该入口执行
+2019-05-28 14:59:57,421 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 14:59:57,433 - INFO - ['新零售WEB']
+2019-05-28 14:59:57,446 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 14:59:57,446 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 14:59:57,446 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 14:59:57,446 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 14:59:59,992 - ERROR - write() missing 1 required positional argument: 'value'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 59, in runCases
+    func(line[4], line[5])
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 33, in openbrower
+    self.writer.write(self.writer.row, self.writer.clo + 1)
+TypeError: write() missing 1 required positional argument: 'value'
+2019-05-28 14:59:59,995 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 15:00:00,638 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 15:00:00,638 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 15:00:00,755 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:00:00,755 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:00:00,755 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 15:00:00,824 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:00:00,824 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:00:00,824 - INFO - ['', '', '点击登录', 'click', '//*[@id="app"]/div/div[2]/form/div/button', '', '', '', '']
+2019-05-28 15:00:00,898 - INFO - ['', '新订单', '', ' ', '', '', '', '', '']
+2019-05-28 15:00:00,898 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:00:00,898 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:00:00,899 - INFO - ['', '', '点击查看详情', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/div/button[2]/span', '', '', '', '']
+2019-05-28 15:00:01,468 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:00:01,469 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:00:01,469 - INFO - ['', '', '点击返回', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div[5]/div[2]/div/div[1]/button/span', '', '', '', '']
+2019-05-28 15:00:01,832 - INFO - ['', '订单管理', '', ' ', '', '', '', '', '']
+2019-05-28 15:00:01,832 - INFO - ['', '', '切入订单管理', 'click', '//*[@id="app"]/div/div[1]/div[1]/div/ul/li[1]/ul/li[2]/span', '', '', '', '']
+2019-05-28 15:00:02,070 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:00:02,070 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:00:02,070 - INFO - ['', '', '搜索订单', 'input', "//input[@placeholder='经销商名称/订单号查询']", '10392.0', ' ', '', '']
+2019-05-28 15:00:02,368 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:00:02,368 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:00:02,369 - INFO - ['', '', '点击搜索', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div[1]/div/form/div/div[2]/button', '', '', '', '']
+2019-05-28 15:00:02,424 - INFO - ['', '退出', '', ' ', '', '', '', '', '']
+2019-05-28 15:00:02,424 - INFO - ['', '', '关闭浏览器', 'closebrower', '', '', '', '', '']
+2019-05-28 15:03:12,369 - INFO - 整个框架使用该入口执行
+2019-05-28 15:03:12,376 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 15:03:12,385 - INFO - ['新零售WEB']
+2019-05-28 15:03:12,397 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 15:03:12,397 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 15:03:12,397 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 15:03:12,397 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 15:03:15,158 - ERROR - write() missing 1 required positional argument: 'value'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 59, in runCases
+    func(line[4], line[5])
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 33, in openbrower
+    self.writer.write(self.writer.row, self.writer.clo + 1)
+TypeError: write() missing 1 required positional argument: 'value'
+2019-05-28 15:03:15,159 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 15:03:15,820 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 15:03:15,820 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 15:03:15,942 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:03:15,942 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:03:15,943 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 15:03:16,008 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:03:16,008 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:03:16,008 - INFO - ['', '', '点击登录', 'click', '//*[@id="app"]/div/div[2]/form/div/button', '', '', '', '']
+2019-05-28 15:03:16,070 - INFO - ['', '新订单', '', ' ', '', '', '', '', '']
+2019-05-28 15:03:16,070 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:03:16,070 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:03:16,070 - INFO - ['', '', '点击查看详情', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/div/button[2]/span', '', '', '', '']
+2019-05-28 15:03:16,657 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:03:16,657 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:03:16,657 - INFO - ['', '', '点击返回', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div[5]/div[2]/div/div[1]/button/span', '', '', '', '']
+2019-05-28 15:03:16,989 - INFO - ['', '订单管理', '', ' ', '', '', '', '', '']
+2019-05-28 15:03:16,989 - INFO - ['', '', '切入订单管理', 'click', '//*[@id="app"]/div/div[1]/div[1]/div/ul/li[1]/ul/li[2]/span', '', '', '', '']
+2019-05-28 15:03:17,211 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:03:17,211 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:03:17,212 - INFO - ['', '', '搜索订单', 'input', "//input[@placeholder='经销商名称/订单号查询']", '10392.0', ' ', '', '']
+2019-05-28 15:03:17,534 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:03:17,534 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:03:17,535 - INFO - ['', '', '点击搜索', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div[1]/div/form/div/div[2]/button', '', '', '', '']
+2019-05-28 15:03:17,601 - INFO - ['', '退出', '', ' ', '', '', '', '', '']
+2019-05-28 15:03:17,601 - INFO - ['', '', '关闭浏览器', 'closebrower', '', '', '', '', '']
+2019-05-28 15:05:57,981 - INFO - 整个框架使用该入口执行
+2019-05-28 15:05:57,990 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 15:05:58,006 - INFO - ['新零售WEB']
+2019-05-28 15:05:58,019 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 15:05:58,019 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 15:05:58,019 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 15:05:58,020 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 15:06:01,246 - ERROR - Message: invalid argument: user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 59, in runCases
+    func(line[4], line[5])
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 30, in openbrower
+    self.driver = webdriver.Chrome(executable_path=d, options=op)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\AUTOTEST\Python3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.15063 x86_64)
+
+2019-05-28 15:06:01,251 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 15:06:01,252 - ERROR - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 38, in geturl
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+2019-05-28 15:06:01,253 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:01,253 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 15:06:01,254 - ERROR - 'NoneType' object has no attribute 'find_element_by_xpath'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 59, in input
+    self.driver.find_element_by_xpath(xpath).send_keys(text)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+2019-05-28 15:06:01,254 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:01,255 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:01,255 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 15:06:01,256 - ERROR - 'NoneType' object has no attribute 'find_element_by_xpath'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 59, in input
+    self.driver.find_element_by_xpath(xpath).send_keys(text)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+2019-05-28 15:06:01,256 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:01,257 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:01,257 - INFO - ['', '', '点击登录', 'click', '//*[@id="app"]/div/div[2]/form/div/button', '', '', '', '']
+2019-05-28 15:06:01,258 - ERROR - 'NoneType' object has no attribute 'find_element_by_xpath'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+2019-05-28 15:06:01,258 - INFO - ['', '新订单', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:01,258 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:01,259 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:01,259 - INFO - ['', '', '点击查看详情', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/div/button[2]/span', '', '', '', '']
+2019-05-28 15:06:01,260 - ERROR - 'NoneType' object has no attribute 'find_element_by_xpath'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+2019-05-28 15:06:01,260 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:01,261 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:01,261 - INFO - ['', '', '点击返回', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div[5]/div[2]/div/div[1]/button/span', '', '', '', '']
+2019-05-28 15:06:01,262 - ERROR - 'NoneType' object has no attribute 'find_element_by_xpath'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+2019-05-28 15:06:01,262 - INFO - ['', '订单管理', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:01,262 - INFO - ['', '', '切入订单管理', 'click', '//*[@id="app"]/div/div[1]/div[1]/div/ul/li[1]/ul/li[2]/span', '', '', '', '']
+2019-05-28 15:06:01,263 - ERROR - 'NoneType' object has no attribute 'find_element_by_xpath'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+2019-05-28 15:06:01,263 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:01,264 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:01,264 - INFO - ['', '', '搜索订单', 'input', "//input[@placeholder='经销商名称/订单号查询']", '10392.0', ' ', '', '']
+2019-05-28 15:06:01,265 - ERROR - 'NoneType' object has no attribute 'find_element_by_xpath'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 59, in input
+    self.driver.find_element_by_xpath(xpath).send_keys(text)
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+2019-05-28 15:06:01,265 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:01,266 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:01,266 - INFO - ['', '', '点击搜索', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div[1]/div/form/div/div[2]/button', '', '', '', '']
+2019-05-28 15:06:01,266 - ERROR - 'NoneType' object has no attribute 'find_element_by_xpath'
+Traceback (most recent call last):
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 48, in click
+    self.driver.find_element_by_xpath(xpath).click()
+AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'
+2019-05-28 15:06:01,267 - INFO - ['', '退出', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:01,267 - INFO - ['', '', '关闭浏览器', 'closebrower', '', '', '', '', '']
+2019-05-28 15:06:01,268 - ERROR - 'NoneType' object has no attribute 'quit'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 55, in runCases
+    func()
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 132, in closebrower
+    self.driver.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+2019-05-28 15:06:02,541 - DEBUG - {'from': 'm18570394312_1@163.com', 'username': 'm18570394312_1@163.com', 'hostname': 'smtp.163.com', 'password': 'dongnao001', 'to': ['1416084196@qq.com'], 'cc': ['286075568@qq.com'], 'mail_subject': '新零售后台WEB自动化报告', 'mail_encoding': 'utf8', 'filepaths': ['./lib/result-XLSWEB.xls'], 'filenames': ['result-XLSWEB.xls']}
+2019-05-28 15:06:02,541 - DEBUG - <html><style type="text/css">body{ background:#ffffff; margin:0 auto; padding:0; text-align:left; font-size:13px; font-family: "微软雅黑","宋体";}table{ font-size:13px; font-family: "微软雅黑","宋体";}.table_c{border:1px solid #ccc;border-collapse:collapse; }.table_c td{border:1px solid #ccc; border-collapse:collapse;}.table_b{border:1px solid #666;border-collapse:collapse; }.table_b td{ border-collapse:collapse; border:1px solid #ccc;}.table_b th{color:#fff; background:#666;}a:link{ color:#3366cc; font-weight:normal; }a:visited { color: #3366cc;}a:hover{ color:#000; }a:active { color:#3366cc; }td{ line-height:20px;}.case-group {border: 1px solid transparent;border-color: #ddd;line-height:5px;}.case-group a:link,a:hover{color:#0092fa;text-decoration:none;}.group-模拟器测试用例{margin: 10px;}.case-模拟器测试用例{height: 30px;}.case-case {border-top: 1px solid;border-color: #ddd;padding: 13px;word-wrap: break-word;}.statuclass{float:right;right:5%;position:relative;}.countclass{float:right;right:20%;position:relative;}.passclass{float:right;right:30%;position:relative;}.casename{position:relative;left:3%;}.righta{float:right;font-size:20px;}.case-file{border: 2px #8cbfff solid;border-radius: 5px;}</style><table width="650" ="0" cellspacing="0" align="center" cellpadding="0" style="border-radius: 15px;background-color: #f6f5f5;border: 1px #ffe4da solid;"><tbody><tr><td><table width="660" border="0" cellpadding="0" cellspacing="0" style="border-radius: 15px 15px 0 0;background-color: #ffffff;"><tbody><tr><td width="137"><img src="C:\Users\Administrator\Pictures\cc.jpg" width="137" height="80"></td><td align="left" style="font-size: 13px;color: #999999;padding-top: 26px;right: 10px;position: relative;top: -10px;text-align:right;"><h style="font-size: 20px;font-family: cursive;line-height: 30px;color: #8cbfff;">Hi All ！ </h><br>此为来自物必达自动化小组测试邮件，请不要直接回复。</td></tr></tbody></table><br><table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="font-size: 14px; color: 333333; font-weight: bold; padding:0 0 15px 16px;">测试报告：<font color="ff6600">自动化测试用例</font></td></tr><tr><td style="border: 2px #8cbfff solid;border-radius: 5px;"><table width="630" border="0" align="center" class="table_c" style="border-collapse:collapse;margin: 10px;"><tbody><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试内容</td><td colspan="3" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><h4 style="line-height: 1px;margin:0;">新零售后台WEB自动化报告</h4></td></tr><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试状态</td><td height="28" width="150" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><font style="font-weight: bold;font-size: 14px;color: red;">Fail</font></td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">类型</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">WEB</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">通过率</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">0.0</td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">开始时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:05:58</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">总用例数</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">9</td><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">结束时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:06:01</td></tr></tbody></table></td></tr><tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 10px 16px;border-bottom: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">如果您对本次邮件结果有任何疑问，请联系 <a href="http://wpa.qq.com/msgrd?v=3&uin=286075568&site=qq&menu=yes" target="_blank" color="#666666">Antoy：280675568</a></a> 反馈。</td></tr></tbody></table></td></tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 16px 16px;border-top: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">感谢您的查阅。<font color="#666666">All Rights Reserved by 物必达 College. Designed and Developed by Mr. Antoy.</font></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>
+2019-05-28 15:06:03,038 - INFO - 邮件发送成功
+2019-05-28 15:06:09,623 - INFO - 整个框架使用该入口执行
+2019-05-28 15:06:09,637 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 15:06:09,651 - INFO - ['新零售WEB']
+2019-05-28 15:06:09,683 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 15:06:09,683 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 15:06:09,683 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:09,683 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 15:06:12,352 - ERROR - write() missing 1 required positional argument: 'value'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 59, in runCases
+    func(line[4], line[5])
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 33, in openbrower
+    self.writer.write(self.writer.row, self.writer.clo + 1)
+TypeError: write() missing 1 required positional argument: 'value'
+2019-05-28 15:06:12,356 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 15:06:12,974 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:12,974 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 15:06:13,111 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:13,111 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:13,112 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 15:06:13,195 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:13,195 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:13,196 - INFO - ['', '', '点击登录', 'click', '//*[@id="app"]/div/div[2]/form/div/button', '', '', '', '']
+2019-05-28 15:06:13,269 - INFO - ['', '新订单', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:13,269 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:13,269 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:13,270 - INFO - ['', '', '点击查看详情', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/div/button[2]/span', '', '', '', '']
+2019-05-28 15:06:13,947 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:13,947 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:13,948 - INFO - ['', '', '点击返回', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div[5]/div[2]/div/div[1]/button/span', '', '', '', '']
+2019-05-28 15:06:14,276 - INFO - ['', '订单管理', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:14,276 - INFO - ['', '', '切入订单管理', 'click', '//*[@id="app"]/div/div[1]/div[1]/div/ul/li[1]/ul/li[2]/span', '', '', '', '']
+2019-05-28 15:06:14,504 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:14,505 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:14,505 - INFO - ['', '', '搜索订单', 'input', "//input[@placeholder='经销商名称/订单号查询']", '10392.0', ' ', '', '']
+2019-05-28 15:06:14,819 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:06:14,819 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 120, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 48, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:06:14,820 - INFO - ['', '', '点击搜索', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div[1]/div/form/div/div[2]/button', '', '', '', '']
+2019-05-28 15:06:14,880 - INFO - ['', '退出', '', ' ', '', '', '', '', '']
+2019-05-28 15:06:14,880 - INFO - ['', '', '关闭浏览器', 'closebrower', '', '', '', '', '']
+2019-05-28 15:06:18,414 - DEBUG - {'from': 'm18570394312_1@163.com', 'username': 'm18570394312_1@163.com', 'hostname': 'smtp.163.com', 'password': 'dongnao001', 'to': ['1416084196@qq.com'], 'cc': ['286075568@qq.com'], 'mail_subject': '新零售后台WEB自动化报告', 'mail_encoding': 'utf8', 'filepaths': ['./lib/result-XLSWEB.xls'], 'filenames': ['result-XLSWEB.xls']}
+2019-05-28 15:06:18,414 - DEBUG - <html><style type="text/css">body{ background:#ffffff; margin:0 auto; padding:0; text-align:left; font-size:13px; font-family: "微软雅黑","宋体";}table{ font-size:13px; font-family: "微软雅黑","宋体";}.table_c{border:1px solid #ccc;border-collapse:collapse; }.table_c td{border:1px solid #ccc; border-collapse:collapse;}.table_b{border:1px solid #666;border-collapse:collapse; }.table_b td{ border-collapse:collapse; border:1px solid #ccc;}.table_b th{color:#fff; background:#666;}a:link{ color:#3366cc; font-weight:normal; }a:visited { color: #3366cc;}a:hover{ color:#000; }a:active { color:#3366cc; }td{ line-height:20px;}.case-group {border: 1px solid transparent;border-color: #ddd;line-height:5px;}.case-group a:link,a:hover{color:#0092fa;text-decoration:none;}.group-模拟器测试用例{margin: 10px;}.case-模拟器测试用例{height: 30px;}.case-case {border-top: 1px solid;border-color: #ddd;padding: 13px;word-wrap: break-word;}.statuclass{float:right;right:5%;position:relative;}.countclass{float:right;right:20%;position:relative;}.passclass{float:right;right:30%;position:relative;}.casename{position:relative;left:3%;}.righta{float:right;font-size:20px;}.case-file{border: 2px #8cbfff solid;border-radius: 5px;}</style><table width="650" ="0" cellspacing="0" align="center" cellpadding="0" style="border-radius: 15px;background-color: #f6f5f5;border: 1px #ffe4da solid;"><tbody><tr><td><table width="660" border="0" cellpadding="0" cellspacing="0" style="border-radius: 15px 15px 0 0;background-color: #ffffff;"><tbody><tr><td width="137"><img src="C:\Users\Administrator\Pictures\cc.jpg" width="137" height="80"></td><td align="left" style="font-size: 13px;color: #999999;padding-top: 26px;right: 10px;position: relative;top: -10px;text-align:right;"><h style="font-size: 20px;font-family: cursive;line-height: 30px;color: #8cbfff;">Hi All ！ </h><br>此为来自物必达自动化小组测试邮件，请不要直接回复。</td></tr></tbody></table><br><table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="font-size: 14px; color: 333333; font-weight: bold; padding:0 0 15px 16px;">测试报告：<font color="ff6600">自动化测试用例</font></td></tr><tr><td style="border: 2px #8cbfff solid;border-radius: 5px;"><table width="630" border="0" align="center" class="table_c" style="border-collapse:collapse;margin: 10px;"><tbody><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试内容</td><td colspan="3" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><h4 style="line-height: 1px;margin:0;">新零售后台WEB自动化报告</h4></td></tr><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试状态</td><td height="28" width="150" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><font style="font-weight: bold;font-size: 14px;color: red;">Fail</font></td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">类型</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">WEB</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">通过率</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">100.0</td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">开始时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:06:09</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">总用例数</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">10</td><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">结束时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:06:17</td></tr></tbody></table></td></tr><tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 10px 16px;border-bottom: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">如果您对本次邮件结果有任何疑问，请联系 <a href="http://wpa.qq.com/msgrd?v=3&uin=286075568&site=qq&menu=yes" target="_blank" color="#666666">Antoy：280675568</a></a> 反馈。</td></tr></tbody></table></td></tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 16px 16px;border-top: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">感谢您的查阅。<font color="#666666">All Rights Reserved by 物必达 College. Designed and Developed by Mr. Antoy.</font></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>
+2019-05-28 15:06:18,896 - INFO - 邮件发送成功
+2019-05-28 15:10:16,029 - INFO - 整个框架使用该入口执行
+2019-05-28 15:10:16,037 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 15:10:16,042 - INFO - ['新零售WEB']
+2019-05-28 15:10:16,053 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 15:10:16,053 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 15:10:16,053 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 15:10:16,053 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 15:10:18,671 - ERROR - write() missing 1 required positional argument: 'value'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 121, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 60, in runCases
+    func(line[4], line[5])
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 33, in openbrower
+    self.writer.write(self.writer.row, self.writer.clo + 1)
+TypeError: write() missing 1 required positional argument: 'value'
+2019-05-28 15:10:18,673 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 15:10:19,303 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 15:10:19,303 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 15:10:19,436 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:10:19,437 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 121, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 49, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:10:19,437 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 15:10:19,514 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:10:19,514 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 121, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 49, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:10:19,514 - INFO - ['', '', '点击登录', 'click', '//*[@id="app"]/div/div[2]/form/div/button', '', '', '', '']
+2019-05-28 15:10:19,582 - INFO - ['', '新订单', '', ' ', '', '', '', '', '']
+2019-05-28 15:10:19,582 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:10:19,582 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 121, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 49, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:10:19,583 - INFO - ['', '', '点击查看详情', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/div/button[2]/span', '', '', '', '']
+2019-05-28 15:10:20,168 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:10:20,168 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 121, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 49, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:10:20,168 - INFO - ['', '', '点击返回', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div[5]/div[2]/div/div[1]/button/span', '', '', '', '']
+2019-05-28 15:10:20,496 - INFO - ['', '订单管理', '', ' ', '', '', '', '', '']
+2019-05-28 15:10:20,496 - INFO - ['', '', '切入订单管理', 'click', '//*[@id="app"]/div/div[1]/div[1]/div/ul/li[1]/ul/li[2]/span', '', '', '', '']
+2019-05-28 15:10:20,709 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:10:20,709 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 121, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 49, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:10:20,710 - INFO - ['', '', '搜索订单', 'input', "//input[@placeholder='经销商名称/订单号查询']", '10392.0', ' ', '', '']
+2019-05-28 15:10:20,996 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:10:20,997 - ERROR - 'WEB' object has no attribute 'sleep'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 121, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 49, in runCases
+    func = getattr(http, line[3])
+AttributeError: 'WEB' object has no attribute 'sleep'
+2019-05-28 15:10:20,997 - INFO - ['', '', '点击搜索', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div[1]/div/form/div/div[2]/button', '', '', '', '']
+2019-05-28 15:10:21,056 - INFO - ['', '退出', '', ' ', '', '', '', '', '']
+2019-05-28 15:10:21,056 - INFO - ['', '', '关闭浏览器', 'closebrower', '', '', '', '', '']
+2019-05-28 15:10:24,567 - DEBUG - {'from': 'm18570394312_1@163.com', 'username': 'm18570394312_1@163.com', 'hostname': 'smtp.163.com', 'password': 'dongnao001', 'to': ['1416084196@qq.com'], 'cc': ['286075568@qq.com'], 'mail_subject': '新零售后台WEB自动化报告', 'mail_encoding': 'utf8', 'filepaths': ['./lib/result-XLSWEB.xls'], 'filenames': ['result-XLSWEB.xls']}
+2019-05-28 15:10:24,567 - DEBUG - <html><style type="text/css">body{ background:#ffffff; margin:0 auto; padding:0; text-align:left; font-size:13px; font-family: "微软雅黑","宋体";}table{ font-size:13px; font-family: "微软雅黑","宋体";}.table_c{border:1px solid #ccc;border-collapse:collapse; }.table_c td{border:1px solid #ccc; border-collapse:collapse;}.table_b{border:1px solid #666;border-collapse:collapse; }.table_b td{ border-collapse:collapse; border:1px solid #ccc;}.table_b th{color:#fff; background:#666;}a:link{ color:#3366cc; font-weight:normal; }a:visited { color: #3366cc;}a:hover{ color:#000; }a:active { color:#3366cc; }td{ line-height:20px;}.case-group {border: 1px solid transparent;border-color: #ddd;line-height:5px;}.case-group a:link,a:hover{color:#0092fa;text-decoration:none;}.group-模拟器测试用例{margin: 10px;}.case-模拟器测试用例{height: 30px;}.case-case {border-top: 1px solid;border-color: #ddd;padding: 13px;word-wrap: break-word;}.statuclass{float:right;right:5%;position:relative;}.countclass{float:right;right:20%;position:relative;}.passclass{float:right;right:30%;position:relative;}.casename{position:relative;left:3%;}.righta{float:right;font-size:20px;}.case-file{border: 2px #8cbfff solid;border-radius: 5px;}</style><table width="650" ="0" cellspacing="0" align="center" cellpadding="0" style="border-radius: 15px;background-color: #f6f5f5;border: 1px #ffe4da solid;"><tbody><tr><td><table width="660" border="0" cellpadding="0" cellspacing="0" style="border-radius: 15px 15px 0 0;background-color: #ffffff;"><tbody><tr><td width="137"><img src="C:\Users\Administrator\Pictures\cc.jpg" width="137" height="80"></td><td align="left" style="font-size: 13px;color: #999999;padding-top: 26px;right: 10px;position: relative;top: -10px;text-align:right;"><h style="font-size: 20px;font-family: cursive;line-height: 30px;color: #8cbfff;">Hi All ！ </h><br>此为来自物必达自动化小组测试邮件，请不要直接回复。</td></tr></tbody></table><br><table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="font-size: 14px; color: 333333; font-weight: bold; padding:0 0 15px 16px;">测试报告：<font color="ff6600">自动化测试用例</font></td></tr><tr><td style="border: 2px #8cbfff solid;border-radius: 5px;"><table width="630" border="0" align="center" class="table_c" style="border-collapse:collapse;margin: 10px;"><tbody><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试内容</td><td colspan="3" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><h4 style="line-height: 1px;margin:0;">新零售后台WEB自动化报告</h4></td></tr><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试状态</td><td height="28" width="150" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><font style="font-weight: bold;font-size: 14px;color: red;">Fail</font></td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">类型</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">WEB</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">通过率</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">100.0</td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">开始时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:10:16</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">总用例数</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">11</td><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">结束时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:10:23</td></tr></tbody></table></td></tr><tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 10px 16px;border-bottom: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">如果您对本次邮件结果有任何疑问，请联系 <a href="http://wpa.qq.com/msgrd?v=3&uin=286075568&site=qq&menu=yes" target="_blank" color="#666666">Antoy：280675568</a></a> 反馈。</td></tr></tbody></table></td></tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 16px 16px;border-top: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">感谢您的查阅。<font color="#666666">All Rights Reserved by 物必达 College. Designed and Developed by Mr. Antoy.</font></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>
+2019-05-28 15:10:24,970 - INFO - 邮件发送成功
+2019-05-28 15:26:45,168 - INFO - 整个框架使用该入口执行
+2019-05-28 15:26:45,175 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 15:26:45,180 - INFO - ['新零售WEB']
+2019-05-28 15:26:45,191 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 15:26:45,191 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 15:26:45,191 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 15:26:45,192 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 15:26:47,925 - ERROR - write() missing 1 required positional argument: 'value'
+Traceback (most recent call last):
+  File "D:/github/MyFrameViP2/mianRunner.py", line 121, in <module>
+    runCases(http, line)
+  File "D:/github/MyFrameViP2/mianRunner.py", line 60, in runCases
+    func(line[4], line[5])
+  File "D:\github\MyFrameViP2\web\webkeys.py", line 33, in openbrower
+    self.writer.write(self.writer.row, self.writer.clo + 1)
+TypeError: write() missing 1 required positional argument: 'value'
+2019-05-28 15:26:47,926 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 15:26:48,865 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 15:26:48,865 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 15:26:49,003 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:26:51,003 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 15:26:51,071 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:26:53,071 - INFO - ['', '', '点击登录', 'click', '//*[@id="app"]/div/div[2]/form/div/button', '', '', '', '']
+2019-05-28 15:26:53,168 - INFO - ['', '新订单', '', ' ', '', '', '', '', '']
+2019-05-28 15:26:53,169 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:26:55,169 - INFO - ['', '', '点击查看详情', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/div/button[2]/span', '', '', '', '']
+2019-05-28 15:26:55,260 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:26:57,261 - INFO - ['', '', '点击返回', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div[5]/div[2]/div/div[1]/button/span', '', '', '', '']
+2019-05-28 15:26:57,434 - INFO - ['', '订单管理', '', ' ', '', '', '', '', '']
+2019-05-28 15:26:57,435 - INFO - ['', '', '切入订单管理', 'click', '//*[@id="app"]/div/div[1]/div[1]/div/ul/li[1]/ul/li[2]/span', '', '', '', '']
+2019-05-28 15:26:57,685 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:26:59,685 - INFO - ['', '', '搜索订单', 'input', "//input[@placeholder='经销商名称/订单号查询']", '10392.0', ' ', '', '']
+2019-05-28 15:26:59,873 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:27:01,874 - INFO - ['', '', '点击搜索', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div[1]/div/form/div/div[2]/button', '', '', '', '']
+2019-05-28 15:27:01,939 - INFO - ['', '退出', '', ' ', '', '', '', '', '']
+2019-05-28 15:27:01,939 - INFO - ['', '', '关闭浏览器', 'closebrower', '', '', '', '', '']
+2019-05-28 15:27:05,767 - DEBUG - {'from': 'm18570394312_1@163.com', 'username': 'm18570394312_1@163.com', 'hostname': 'smtp.163.com', 'password': 'dongnao001', 'to': ['1416084196@qq.com'], 'cc': ['286075568@qq.com'], 'mail_subject': '新零售后台WEB自动化报告', 'mail_encoding': 'utf8', 'filepaths': ['./lib/result-XLSWEB.xls'], 'filenames': ['result-XLSWEB.xls']}
+2019-05-28 15:27:05,767 - DEBUG - <html><style type="text/css">body{ background:#ffffff; margin:0 auto; padding:0; text-align:left; font-size:13px; font-family: "微软雅黑","宋体";}table{ font-size:13px; font-family: "微软雅黑","宋体";}.table_c{border:1px solid #ccc;border-collapse:collapse; }.table_c td{border:1px solid #ccc; border-collapse:collapse;}.table_b{border:1px solid #666;border-collapse:collapse; }.table_b td{ border-collapse:collapse; border:1px solid #ccc;}.table_b th{color:#fff; background:#666;}a:link{ color:#3366cc; font-weight:normal; }a:visited { color: #3366cc;}a:hover{ color:#000; }a:active { color:#3366cc; }td{ line-height:20px;}.case-group {border: 1px solid transparent;border-color: #ddd;line-height:5px;}.case-group a:link,a:hover{color:#0092fa;text-decoration:none;}.group-模拟器测试用例{margin: 10px;}.case-模拟器测试用例{height: 30px;}.case-case {border-top: 1px solid;border-color: #ddd;padding: 13px;word-wrap: break-word;}.statuclass{float:right;right:5%;position:relative;}.countclass{float:right;right:20%;position:relative;}.passclass{float:right;right:30%;position:relative;}.casename{position:relative;left:3%;}.righta{float:right;font-size:20px;}.case-file{border: 2px #8cbfff solid;border-radius: 5px;}</style><table width="650" ="0" cellspacing="0" align="center" cellpadding="0" style="border-radius: 15px;background-color: #f6f5f5;border: 1px #ffe4da solid;"><tbody><tr><td><table width="660" border="0" cellpadding="0" cellspacing="0" style="border-radius: 15px 15px 0 0;background-color: #ffffff;"><tbody><tr><td width="137"><img src="C:\Users\Administrator\Pictures\cc.jpg" width="137" height="80"></td><td align="left" style="font-size: 13px;color: #999999;padding-top: 26px;right: 10px;position: relative;top: -10px;text-align:right;"><h style="font-size: 20px;font-family: cursive;line-height: 30px;color: #8cbfff;">Hi All ！ </h><br>此为来自物必达自动化小组测试邮件，请不要直接回复。</td></tr></tbody></table><br><table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="font-size: 14px; color: 333333; font-weight: bold; padding:0 0 15px 16px;">测试报告：<font color="ff6600">自动化测试用例</font></td></tr><tr><td style="border: 2px #8cbfff solid;border-radius: 5px;"><table width="630" border="0" align="center" class="table_c" style="border-collapse:collapse;margin: 10px;"><tbody><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试内容</td><td colspan="3" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><h4 style="line-height: 1px;margin:0;">新零售后台WEB自动化报告</h4></td></tr><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试状态</td><td height="28" width="150" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><font style="font-weight: bold;font-size: 14px;color: #00d800;">Pass</font></td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">类型</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">WEB</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">通过率</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">100.0</td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">开始时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:26:45</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">总用例数</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">17</td><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">结束时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:27:04</td></tr></tbody></table></td></tr><tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 10px 16px;border-bottom: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">如果您对本次邮件结果有任何疑问，请联系 <a href="http://wpa.qq.com/msgrd?v=3&uin=286075568&site=qq&menu=yes" target="_blank" color="#666666">Antoy：280675568</a></a> 反馈。</td></tr></tbody></table></td></tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 16px 16px;border-top: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">感谢您的查阅。<font color="#666666">All Rights Reserved by 物必达 College. Designed and Developed by Mr. Antoy.</font></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>
+2019-05-28 15:27:06,150 - INFO - 邮件发送成功
+2019-05-28 15:28:22,808 - INFO - 整个框架使用该入口执行
+2019-05-28 15:28:22,817 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 15:28:22,824 - INFO - ['新零售WEB']
+2019-05-28 15:28:22,839 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 15:28:22,839 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 15:28:22,839 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 15:28:22,839 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 15:28:25,400 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 15:28:26,181 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 15:28:26,181 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 15:28:33,880 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:28:35,881 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 15:28:38,697 - INFO - 整个框架使用该入口执行
+2019-05-28 15:28:38,704 - INFO - 正在恢复./lib/userinfo.sql数据库
+2019-05-28 15:28:38,709 - INFO - ['新零售WEB']
+2019-05-28 15:28:38,721 - INFO - ['分组信息', '', '用例名', '关键字', '输入', '', '', '执行状态', '实际结果']
+2019-05-28 15:28:38,721 - INFO - ['打开首页', 'WEB', '新零售后台WEB自动化报告', '', '', '', '', '', '']
+2019-05-28 15:28:38,721 - INFO - ['', '基础设置', '', ' ', '', '', '', '', '']
+2019-05-28 15:28:38,721 - INFO - ['', '', '打开浏览器', 'openbrower', '', '', '', '', '']
+2019-05-28 15:28:41,330 - INFO - ['', '', '打开首页', 'geturl', 'https://ydh.iwubida.com/login', '', '', '', '']
+2019-05-28 15:28:41,947 - INFO - ['', '登录', '', ' ', '', '', '', '', '']
+2019-05-28 15:28:41,948 - INFO - ['', '', '输入用户名', 'input', '//*[@id="app"]/div/div[2]/form/div/div[1]/div/div/input', '15000000001', '', '', '']
+2019-05-28 15:28:42,069 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:28:44,071 - INFO - ['', '', '输入密码', 'input', '//*[@id="app"]/div/div[2]/form/div/div[2]/div/div/input', '111111', '', '', '']
+2019-05-28 15:28:44,187 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:28:46,187 - INFO - ['', '', '点击登录', 'click', '//*[@id="app"]/div/div[2]/form/div/button', '', '', '', '']
+2019-05-28 15:28:46,263 - INFO - ['', '新订单', '', ' ', '', '', '', '', '']
+2019-05-28 15:28:46,263 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:28:48,263 - INFO - ['', '', '点击查看详情', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/div/button[2]/span', '', '', '', '']
+2019-05-28 15:28:48,413 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:28:50,413 - INFO - ['', '', '点击返回', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div/div/div[5]/div[2]/div/div[1]/button/span', '', '', '', '']
+2019-05-28 15:28:50,588 - INFO - ['', '订单管理', '', ' ', '', '', '', '', '']
+2019-05-28 15:28:50,588 - INFO - ['', '', '切入订单管理', 'click', '//*[@id="app"]/div/div[1]/div[1]/div/ul/li[1]/ul/li[2]/span', '', '', '', '']
+2019-05-28 15:28:50,803 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:28:52,803 - INFO - ['', '', '搜索订单', 'input', "//input[@placeholder='经销商名称/订单号查询']", '10392.0', ' ', '', '']
+2019-05-28 15:28:53,062 - INFO - ['', '', '等待', 'sleep', '2', '', '', '', '']
+2019-05-28 15:28:55,063 - INFO - ['', '', '点击搜索', 'click', '//*[@id="app"]/div/div[2]/div[2]/div/div/div/div[1]/div/form/div/div[2]/button', '', '', '', '']
+2019-05-28 15:28:55,117 - INFO - ['', '退出', '', ' ', '', '', '', '', '']
+2019-05-28 15:28:55,117 - INFO - ['', '', '关闭浏览器', 'closebrower', '', '', '', '', '']
+2019-05-28 15:28:58,626 - DEBUG - {'from': 'm18570394312_1@163.com', 'username': 'm18570394312_1@163.com', 'hostname': 'smtp.163.com', 'password': 'dongnao001', 'to': ['1416084196@qq.com'], 'cc': ['286075568@qq.com'], 'mail_subject': '新零售后台WEB自动化报告', 'mail_encoding': 'utf8', 'filepaths': ['./lib/result-XLSWEB.xls'], 'filenames': ['result-XLSWEB.xls']}
+2019-05-28 15:28:58,626 - DEBUG - <html><style type="text/css">body{ background:#ffffff; margin:0 auto; padding:0; text-align:left; font-size:13px; font-family: "微软雅黑","宋体";}table{ font-size:13px; font-family: "微软雅黑","宋体";}.table_c{border:1px solid #ccc;border-collapse:collapse; }.table_c td{border:1px solid #ccc; border-collapse:collapse;}.table_b{border:1px solid #666;border-collapse:collapse; }.table_b td{ border-collapse:collapse; border:1px solid #ccc;}.table_b th{color:#fff; background:#666;}a:link{ color:#3366cc; font-weight:normal; }a:visited { color: #3366cc;}a:hover{ color:#000; }a:active { color:#3366cc; }td{ line-height:20px;}.case-group {border: 1px solid transparent;border-color: #ddd;line-height:5px;}.case-group a:link,a:hover{color:#0092fa;text-decoration:none;}.group-模拟器测试用例{margin: 10px;}.case-模拟器测试用例{height: 30px;}.case-case {border-top: 1px solid;border-color: #ddd;padding: 13px;word-wrap: break-word;}.statuclass{float:right;right:5%;position:relative;}.countclass{float:right;right:20%;position:relative;}.passclass{float:right;right:30%;position:relative;}.casename{position:relative;left:3%;}.righta{float:right;font-size:20px;}.case-file{border: 2px #8cbfff solid;border-radius: 5px;}</style><table width="650" ="0" cellspacing="0" align="center" cellpadding="0" style="border-radius: 15px;background-color: #f6f5f5;border: 1px #ffe4da solid;"><tbody><tr><td><table width="660" border="0" cellpadding="0" cellspacing="0" style="border-radius: 15px 15px 0 0;background-color: #ffffff;"><tbody><tr><td width="137"><img src="C:\Users\Administrator\Pictures\cc.jpg" width="137" height="80"></td><td align="left" style="font-size: 13px;color: #999999;padding-top: 26px;right: 10px;position: relative;top: -10px;text-align:right;"><h style="font-size: 20px;font-family: cursive;line-height: 30px;color: #8cbfff;">Hi All ！ </h><br>此为来自物必达自动化小组测试邮件，请不要直接回复。</td></tr></tbody></table><br><table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="font-size: 14px; color: 333333; font-weight: bold; padding:0 0 15px 16px;">测试报告：<font color="ff6600">自动化测试用例</font></td></tr><tr><td style="border: 2px #8cbfff solid;border-radius: 5px;"><table width="630" border="0" align="center" class="table_c" style="border-collapse:collapse;margin: 10px;"><tbody><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试内容</td><td colspan="3" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><h4 style="line-height: 1px;margin:0;">新零售后台WEB自动化报告</h4></td></tr><tr><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">测试状态</td><td height="28" width="150" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;"><font style="font-weight: bold;font-size: 14px;color: #00d800;">Pass</font></td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">类型</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">WEB</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">通过率</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">100.0</td><td width="100" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">开始时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:28:38</td></tr><tr><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">总用例数</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">17</td><td width="80" height="28" align="center" bgcolor="#ffe9e9" style="border:1px solid #ccc;">结束时间</td><td height="28" bgcolor="#FFFFFF" align="center" style="border:1px solid #ccc;">2019-05-28 15:28:57</td></tr></tbody></table></td></tr><tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 10px 16px;border-bottom: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">如果您对本次邮件结果有任何疑问，请联系 <a href="http://wpa.qq.com/msgrd?v=3&uin=286075568&site=qq&menu=yes" target="_blank" color="#666666">Antoy：280675568</a></a> 反馈。</td></tr></tbody></table></td></tr><td><table border="0" align="center" cellspacing="0" cellpadding="0" style="margin: 24px 0 16px 16px;border-top: #e4e4e4 1px solid;"><tbody><tr><td style="font-size: 13px; line-height: 20px; color: #999999; padding-top: 6px;">感谢您的查阅。<font color="#666666">All Rights Reserved by 物必达 College. Designed and Developed by Mr. Antoy.</font></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>
+2019-05-28 15:28:59,145 - INFO - 邮件发送成功

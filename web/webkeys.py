@@ -30,7 +30,7 @@ class WEB:
             self.driver = webdriver.Chrome(executable_path=d, options=op)
             self.driver.implicitly_wait(30)
             self.writer.write(self.writer.row, self.writer.clo, "PASS")
-            self.writer.write(self.writer.row, self.writer.clo + 1)
+            self.writer.write(self.writer.row, self.writer.clo + 1,"打开浏览器成功")
 
 
     def geturl(self,url):
@@ -127,6 +127,29 @@ class WEB:
             self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
             return False
 
+    # 强制等待
+    def sleep(self, t):
+        try:
+            t = int(t)
+        except:
+            t = 1
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
+
+        time.sleep(t)
+        self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+        self.writer.write(self.writer.row, self.writer.clo + 1, "强制等待成功")
+
+        return True
+
 
     def closebrower(self):
-        self.driver.quit()
+        try:
+            self.driver.quit()
+            self.writer.write(self.writer.row, self.writer.clo, "PASS")
+            self.writer.write(self.writer.row, self.writer.clo + 1, "关闭浏览器成功")
+
+        except Exception as e:
+            logger.exception(e)
+            self.writer.write(self.writer.row, self.writer.clo, "FAIL")
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(e))

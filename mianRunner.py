@@ -9,6 +9,7 @@ from common.mysql import Mysql
 from common.mail import Mail
 from common.excelresult import Res
 from web.webkeys import WEB
+from app.appkeys import APP
 
 def runCases(http, line):
     """
@@ -67,7 +68,7 @@ if __name__ == "__main__":
     logger.info("整个框架使用该入口执行")
     #运行用例之前，初始化配置，初始化数据库
 
-    casename='WEB.xls'
+    casename='XLSWEB.xls'
 
     config.get_config('./lib/conf.properties')
     mysql = Mysql()
