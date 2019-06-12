@@ -17,13 +17,21 @@ from common.Excel import Reader, Writer
 #
 # print(jsonres['data'][0]['location'])
 
-from inter.soapkeys import SOAP
+# from inter.soapkeys import SOAP
+# #
+# # soap =SOAP(None)
+# # soap.adddoctor()
+# # soap.setwsdl('http://112.74.191.10:8081/inter/SOAP?wsdl')
+# # soap.callmethod('auth')
+# # soap.savejson('token','token')
+# # soap.addheader('token','{token}')
+# # soap.callmethod('login','will、123456')
+# # soap.callmethod('logout')
 
-soap =SOAP(None)
-soap.adddoctor()
-soap.setwsdl('http://112.74.191.10:8081/inter/SOAP?wsdl')
-soap.callmethod('auth')
-soap.savejson('token','token')
-soap.addheader('token','{token}')
-soap.callmethod('login','will、123456')
-soap.callmethod('logout')
+# from colorama import Fore, Back, Style
+from colorama import Fore
+# for color in ['GREEN', 'RED', 'BLUE', 'YELLOW', 'WHITE']:
+for color in ['GREEN', 'RED']:
+    print(getattr(Fore, color), "It's color will be", color)
+    # print (getattr(Back, color), "It's color will be", color)
+    # print( Style.RESET_ALL)

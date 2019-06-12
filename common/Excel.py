@@ -76,7 +76,7 @@ class Reader:
 
 class Writer:
     """
-        powered by Mr Will
+        powered by Mr Antoy
            at 2018-12-21
         用来复制写入Excel文件
     """

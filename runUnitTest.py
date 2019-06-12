@@ -28,8 +28,8 @@ if __name__ == '__main__':
 
     # 为空，则使用默认的
     if casepath == '':
-        casepath = path + '/lib/WEB.xls'
-        resultpath = path + '/lib/结果-WEB.xls'
+        casepath = path + '/lib/XLSWEB.xls'
+        resultpath = path + '/lib/结果-XLSWEB.xls'
     else:
         # 如果是绝对路径，就使用绝对路径
         if casepath.find(':') >= 0:

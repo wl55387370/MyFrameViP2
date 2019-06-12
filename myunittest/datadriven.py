@@ -6,7 +6,7 @@ from common.Excel import Reader, Writer
 reader = Reader()
 writer = Writer()
 alllist = []
-runtype = 'WEB'
+runtype = 'XLSWEB'
 
 
 # 反射获取关键字
@@ -128,7 +128,7 @@ def getparams(casepath, resultpath):
             else:
                 list += line[2:7]
                 alllist.append(list)
-    alllist = mysort(alllist)
+    # alllist = mysort(alllist)
 
     print(alllist)
 

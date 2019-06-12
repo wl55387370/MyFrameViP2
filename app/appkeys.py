@@ -3,6 +3,7 @@ from appium import webdriver
 from common import logger
 from appium.webdriver.common.touch_action import TouchAction
 import os, threading, time,traceback
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 class APP:
@@ -23,29 +24,31 @@ class APP:
         self.h = '4723'
 
 
-    def startappium(self,c='',h='4723',t='5'):
-        #启动的命令
+    def startappium(self,c='', h='4723', t='5'):
+        # 启动的命令行
         def run(cmd):
             os.system(cmd)
 
-        self.h=h
+        self.h = h
 
-        cmd = 'node "'+ c + '" -p' + h
-        #用线程th执行函数run
-        th = threading.Thread(target=run,args=(cmd,))
+        cmd = 'node "' + c + '" -p ' + h
+        print(cmd)
+        # 用线程th执行函数run
+        th = threading.Thread(target=run, args=(cmd,))
         th.start()
         time.sleep(int(t))
-        self.writer.write(self.writer.row,self.writer.clo,"pass")
-        self.writer.write(self.writer.row,self.writer.clo+1,"启动appium成功")
+        self.writer.write(self.writer.row, self.writer.clo, "PASS")
+        self.writer.write(self.writer.row, self.writer.clo + 1,'启动appium成功')
 
-    def startapp(self,jsonparma,t='10'):
+
+    def startapp(self, jsonparma, t='10'):
         conf = eval(jsonparma)
-        #连接appium并启动app
-        deiver = webdriver.Remote("http://127.0.01:"+self.h+"/wd/hub",conf)
-        deiver.implicitly_wait(20)
+        # 连接appium并启动APP
+        self.driver = webdriver.Remote("http://127.0.0.1:"+self.h+"/wd/hub", conf)
+        self.driver.implicitly_wait(20)
         time.sleep(int(t))
-        self.writer.write(self.writer.row, self.writer.clo, "pass")
-        self.writer.write(self.writer.row, self.writer.clo + 1, "启动app成功")
+        self.writer.write(self.writer.row, self.writer.clo, "PASS")
+        self.writer.write(self.writer.row, self.writer.clo + 1, '启动app成功')
 
 
     def __find_element(self, locator):
@@ -102,6 +105,32 @@ class APP:
             logger.exception(e)
             self.writer.write(self.writer.row, self.writer.clo, "FAIL")
             self.writer.write(self.writer.row, self.writer.clo + 1, str(e))
+
+    def swipe_left(self, driver):
+        '''左滑'''
+        x = driver.get_window_size()['width']
+        y = driver.get_window_size()['height']
+        driver.swipe(x * 3 / 4, y / 4, x / 4, y / 4)
+
+    def swipe_right(self, driver):
+        '''右滑'''
+        x = driver.get_window_size()['width']
+        y = driver.get_window_size()['height']
+        driver.swipe(x / 4, y / 4, x * 3 / 4, y / 4)
+
+    def swipe_down(self, driver):
+        '''下滑'''
+        x = driver.get_window_size()['width']
+        y = driver.get_window_size()['height']
+        driver.swipe(x / 2, y * 3 / 4, x / 2, y / 4)
+
+    def swipe_up(self, driver):
+        '''上滑'''
+        x = driver.get_window_size()['width']
+        y = driver.get_window_size()['height']
+        driver.swipe(x / 2, y / 4, x / 2, y * 3 / 4)
+
+
 
     def runappium(self, path, port, t):
         """
@@ -202,9 +231,16 @@ class APP:
             pass
 
         self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+        self.writer.write(self.writer.row, self.writer.clo + 1, '关闭appium成功')
         return True
 
-
+    def kill_Appium(self):
+        #关闭appium服务，appium是通过pid
+        process = os.popen("netstat -aon |findstr 4723").read()
+        pid = process.replace('  ', '').split(" ")[2]
+        print(pid)
+        m = os.popen("taskkill -f -pid %s" % pid)
+        print(m.read())
 
     def click1(self, locator):
         """
@@ -286,4 +322,34 @@ class APP:
 
         time.sleep(t)
         self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+        self.writer.write(self.writer.row, self.writer.clo + 1, '强制等待成功')
         return True
+
+    def hover(self, xpath):
+        """
+        根据xpath，找到元素，并将鼠标悬停到元素
+        该关键字自动化过程中，如果认为移动了鼠标可能导致悬停失败
+        该关键字也可以用于页面滚动，但不一定都能滚动成功
+        :param xpath: 元素的xpath
+        :return:
+        """
+        try:
+            ele = self.driver.find_element_by_xpath(xpath)
+        except Exception as e:
+            logger.exception(e)
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
+            # 定位失败，则直接返回
+            return False
+        try:
+            actions = ActionChains(self.driver)
+            actions.move_to_element(ele).perform()
+            self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+            self.writer.write(self.writer.row, self.writer.clo + 1, "悬停成功")
+            return True
+        except Exception as e:
+            logger.exception(e)
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
+            # 定位失败，则直接返回
+            return False

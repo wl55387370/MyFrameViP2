@@ -7,7 +7,7 @@ from common import logger
 class Res:
     """
     统计Excel用例执行结果信息
-    powered by William
+    powered by Antoy
     2018-11-6
     copyright:testingedu.com.cn
     """

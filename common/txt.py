@@ -1,5 +1,5 @@
 # coding:utf8
-# from common import logger
+from common import logger
 
 
 class Txt:

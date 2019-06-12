@@ -68,7 +68,7 @@ if __name__ == "__main__":
     logger.info("整个框架使用该入口执行")
     #运行用例之前，初始化配置，初始化数据库
 
-    casename='XLSWEB.xls'
+    casename='XLSAPPRELEASE.xls'
 
     config.get_config('./lib/conf.properties')
     mysql = Mysql()
@@ -159,4 +159,4 @@ if __name__ == "__main__":
     # mail.mail_info['filenames'] = ['result-HTTP.xls']
     mail.mail_info['filepaths'] = ['./lib/result-'+casename]
     mail.mail_info['filenames'] = ['result-'+casename]
-    mail.send(config.config['mailtxt'])
+    # mail.send(config.config['mailtxt'])

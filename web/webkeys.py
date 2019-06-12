@@ -12,6 +12,8 @@ class WEB:
     def __init__(self,w):
         self.driver = None
         self.writer = w
+        # 保存参数
+        self.params = {}
 
     def openbrower(self,b='chrome',d='chromedriver'):
 
@@ -64,6 +66,33 @@ class WEB:
             self.writer.write(self.writer.row, self.writer.clo, "FAIL")
             self.writer.write(self.writer.row, self.writer.clo + 1, str(e))
 
+    def uploadfile(self, xpath, filepath):
+        """
+        根据xpath，找到元素
+        使用send_keys上传文件
+        :param xpath: 元素的xpath
+        :param filepath: 需要上传文件的全路径
+        :return: 无
+        """
+        try:
+            ele = self.driver.find_element_by_xpath(xpath)
+        except Exception as e:
+            logger.exception(e)
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
+            # 定位失败，则直接返回
+            return False
+        try:
+            ele.send_keys(filepath)
+            self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+            self.writer.write(self.writer.row, self.writer.clo + 1, "上传成功")
+            return True
+        except Exception as e:
+            logger.exception(e)
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
+            return False
+
     def iniframe(self,xpath):
         try:
             self.driver.switch_to.frame(self.driver.find_element_by_xpath(xpath))
@@ -108,7 +137,34 @@ class WEB:
             self.writer.write(self.writer.row, self.writer.clo, "FAIL")
             self.writer.write(self.writer.row, self.writer.clo + 1, str(e))
 
-
+    def hover(self, xpath):
+        """
+        根据xpath，找到元素，并将鼠标悬停到元素
+        该关键字自动化过程中，如果认为移动了鼠标可能导致悬停失败
+        该关键字也可以用于页面滚动，但不一定都能滚动成功
+        :param xpath: 元素的xpath
+        :return:
+        """
+        try:
+            ele = self.driver.find_element_by_xpath(xpath)
+        except Exception as e:
+            logger.exception(e)
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
+            # 定位失败，则直接返回
+            return False
+        try:
+            actions = ActionChains(self.driver)
+            actions.move_to_element(ele).perform()
+            self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+            self.writer.write(self.writer.row, self.writer.clo + 1, "悬停成功")
+            return True
+        except Exception as e:
+            logger.exception(e)
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
+            # 定位失败，则直接返回
+            return False
 
     def excutejs(self,js):
         """
@@ -141,6 +197,63 @@ class WEB:
         self.writer.write(self.writer.row, self.writer.clo + 1, "强制等待成功")
 
         return True
+
+    def gettitle(self):
+        """
+        获取当前窗口的title，并在系统中保存一个名叫title的变量
+        在支持关联的关键字中，可以使用{title}，来调用它的值
+        :return: 无
+        """
+        title = self.driver.title
+        self.params['title'] = title
+        self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+        return True
+
+    def gettext(self, xpath):
+        """
+        获取当前xpath定位元素的文本，并在系统中保存一个名叫text的变量
+        在支持关联的关键字中，可以使用{text}，来调用它的值
+        :param xpath: 元素的xpath
+        :return: 无
+        """
+        self.params['text'] = ''
+        try:
+            text = self.driver.find_element_by_xpath(xpath).text
+            self.params['text'] = text
+            self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+            return True
+        except Exception as e:
+            logger.exception(e)
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(traceback.format_exc()))
+            return False
+
+    def assertequals(self, param, value):
+        """
+        定义断言相等的关键字，用来判断前后的值是否一致
+        :param param: 需要校验的参数
+        :param value: 需要校验的值
+        :return: 无
+        """
+        param = self.__getparams(param)
+        value = self.__getparams(value)
+        if str(param) == str(value):
+            self.writer.write(self.writer.row, self.writer.clo, 'PASS')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(param))
+            return True
+        else:
+            self.writer.write(self.writer.row, self.writer.clo, 'FAIL')
+            self.writer.write(self.writer.row, self.writer.clo + 1, str(param))
+            return False
+
+        # 获取参数里面的值
+
+    def __getparams(self, s):
+        logger.info(self.params)
+        for key in self.params:
+            s = s.replace('{' + key + '}', self.params[key])
+
+        return s
 
 
     def closebrower(self):

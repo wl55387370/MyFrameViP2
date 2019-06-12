@@ -1,7 +1,7 @@
 import unittest,datetime,time
 from parameterized import parameterized
-from web.web import Web
-from app.app import APP
+from web.webkeys import WEB
+from app.appkeys import APP
 from inter.soapkeys import SOAP
 from inter.httpkeys import HTTP
 from myunittest import datadriven
@@ -13,7 +13,7 @@ class TestWeb(unittest.TestCase):
     def setUpClass(cls):
         cls.obj = None
         if datadriven.runtype == 'WEB':
-            cls.obj = Web(datadriven.writer)
+            cls.obj = WEB(datadriven.writer)
 
         if datadriven.runtype == 'APP':
             cls.obj = APP(datadriven.writer)
