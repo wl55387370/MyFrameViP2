@@ -68,7 +68,7 @@ if __name__ == "__main__":
     logger.info("整个框架使用该入口执行")
     #运行用例之前，初始化配置，初始化数据库
 
-    casename='XLSAPPRELEASE.xls'
+    casename='XLSHTTP接口用例.xls'
 
     config.get_config('./lib/conf.properties')
     mysql = Mysql()
