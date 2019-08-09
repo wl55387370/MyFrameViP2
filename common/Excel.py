@@ -5,7 +5,7 @@ from xlutils.copy import copy
 
 class Reader:
     """
-        powered by Mr Will
+        powered by Mr Antoy
            at 2018-12-21
         用来读取Excel文件内容
     """

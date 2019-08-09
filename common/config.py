@@ -8,7 +8,7 @@ config = {}
 
 def get_config(path):
     """
-    powered by Mr Will
+    powered by Mr Antoy
     at 2018-12-22
     用来格式化打印日志到文件和控制台
     :param path:配置文件路径

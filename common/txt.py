@@ -4,7 +4,7 @@ from common import logger
 
 class Txt:
     """
-        powered by Mr Will
+        powered by Mr Antoy
            at 2018-12-21
         用来读写文件
     """

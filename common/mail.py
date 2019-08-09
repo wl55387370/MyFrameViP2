@@ -10,7 +10,7 @@ from email.mime.application import MIMEApplication
 
 class Mail:
     """
-        powered by Mr Will
+        powered by Mr Antoy
         at 2018-12-22
         用来获取配置并发送邮件
     """
